@@ -311,7 +311,7 @@ class Mtrx(PixelArraySensor):
                 s0,s1,ps0,ps1 = type_name.split(':')[1:]
                 shape = (int(s0), int(s1))
                 pixel_shape = (float(ps0), float(ps1))
-                print "###: ", shape, pixel_shape
+                print("###: ", shape, pixel_shape)
             else:
                 raise ValueError('Cannot construct MTRX without either explicit'
                                  ' shape/pixel_shape or MTRX:a:b:x:y type_name')
